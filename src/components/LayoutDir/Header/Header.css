@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'Agbalumo-Regular'; 
+	src: url(/src/fonts/RobotoSlab-VariableFont_wght.ttf); 
+}
+@font-face {
+	font-family: 'Agbalumo-Regular'; 
+	src: url(/src/fonts/RobotoSlab-VariableFont_wght.ttf); 
+}
+
+
+
+.activeLink{
+        color: rgb(79, 191, 255);
+        font-size: 1.3vw;
+        font-weight: bold;
+        font-family: Agbalumo-Regular;
+        opacity: .7;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 2vh;
+        border-radius: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+}
+.navbarLink{
+    color: white;
+    font-size: 1.3vw;
+    font-family: Agbalumo-Regular;
+    opacity: .7;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 2vh;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1vw;
+}
+.navbarLink:hover{
+    
+    opacity: 1;
+    cursor: pointer;
+    border: 1px solid gray;
+    backdrop-filter: blur(25px);
+    transition: .1s all ease;
+}
+.activeLink:hover{
+    
+    opacity: 1;
+    cursor: pointer;
+    border: 1px solid gray;
+    backdrop-filter: blur(25px);
+    transition: .1s all ease;
+}

@@ -1,0 +1,179 @@
+@font-face {
+	font-family: 'Montserrat-vs'; 
+	src: url(/src/fonts/Montserrat-Italic-VariableFont_wght.ttf); 
+}
+
+@font-face {
+	font-family: 'Comfortaa-VariableFont_wght'; 
+	src: url(/src/fonts/Comfortaa-VariableFont_wght.ttf); 
+}
+.container{
+    height: auto;
+    width: 100%;
+    background: radial-gradient(at center, #020E15, #010101);
+    display: flex;
+    padding: 10vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+.nestedContainer{
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.container .nestedContainer:first-child{
+    width: auto;
+}
+.container .nestedContainer:last-child{
+    padding-left:5vw;
+}
+.container .nestedContainer:first-child::before{
+    margin-top: 30vh;
+    content: '';
+    width: 70vw;
+    height: 70vw;
+    position: absolute;
+    background:radial-gradient(rgb(0, 75, 96),transparent,transparent);
+    animation: animate 5.5s linear infinite;;
+    
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translate(0vw,0vh);
+    }
+    25%
+    {
+        transform: translate(10vw,-10vw);
+    }
+    50%
+    {
+        transform: translate(-10vw,-10vw);
+    }
+    75%
+    {
+        transform: translate(-10vw,0vw);
+    }
+    100%
+    {
+        transform: translate(0vw,0vw);
+    }
+}
+.webStudio{
+    height: 80vh;
+    opacity: .8;
+}
+
+.header{
+    color: #eafeff;
+    font-size: 6vh;
+    max-width: 35vw;
+    font-family: Montserrat-vs;
+    opacity: .9;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.header span{
+    vertical-align: bottom;
+    background-image: linear-gradient(to right, pink, skyblue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block; /* чтобы градиент применялся по ширине текста */
+}
+.fullText{
+    font-family: Montserrat-vs;
+    margin-top: 5vh;
+    color: #eafeff;
+    font-size: 3vh;
+    max-width: 35vw; 
+    opacity: .7;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+        padding: 10vh 0;
+        overflow: hidden;
+    }
+    .nestedContainer{
+        width: 100%;
+        position: relative;
+    }
+    .webStudio{
+        height: auto;
+        width: 90%;
+        opacity: .9;
+    }
+    .container .nestedContainer:first-child::before{
+        margin-top: 0vh;
+        width: 90vw;
+        height: 90vw;     
+    }
+    @keyframes animate
+{
+    0%
+    {
+        transform: translate(10vw,10vw);
+    }
+    25%
+    {
+        transform: translate(10vw,-20vw);
+    }
+    50%
+    {
+        transform: translate(-20vw,-20vw);
+    }
+    75%
+    {
+        transform: translate(-20vw,10vw);
+    }
+    100%
+    {
+        transform: translate(10vw,10vw);
+    }
+}
+.header{
+    font-size: 4vh;
+    max-width: 85vw;
+    opacity: .9;
+    text-align: center;
+    margin-top: 5vh;
+}
+.fullText{
+    font-family: Montserrat-vs;
+    margin-top: 5vh;
+    color: #eafeff;
+    font-size: 3vh;
+    max-width: 90vw; 
+    opacity: .7;
+    text-align: center;
+    line-height: 4.7vh;
+}
+}

@@ -1,0 +1,142 @@
+@font-face {
+	font-family: 'Montserrat-vs'; 
+	src: url(/src/fonts/Montserrat-Italic-VariableFont_wght.ttf); 
+}
+
+
+
+.container{
+    height:110vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(at center, #020E15, #010101);
+    box-sizing: border-box;
+
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.textContainer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px);
+    clip-path: circle(80%);
+    z-index: 33;
+}
+.header{
+    color: #eafeff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 10vw;
+    z-index: 10;
+    max-width: 90%;
+    text-align: center;
+    z-index: 33;
+    
+}
+.header span{
+    font-size: 12vw;
+    vertical-align: bottom;
+    background-image: linear-gradient(to right, pink, skyblue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block; /* чтобы градиент применялся по ширине текста */
+}
+.header1{
+    color: #eafeff;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 6vw;
+    margin-top: 10vh;
+    z-index: 10;
+    max-width: 90%;
+    text-align: center;
+    z-index: 33;
+    opacity: .7;
+    text-shadow: #273141 1px 0 10px;
+}
+
+.fon{
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    height: auto;
+    width: 110%;
+    z-index: 2;
+    opacity: 1;
+    animation: rot 35.5s linear infinite;
+}
+@keyframes rot
+{
+    0%{
+        transform: rotate(0);
+        scale: 1;
+    }
+    50%{
+        transform: rotate(180);
+        scale: .6;
+        top:-10vh;
+    }
+    100%{
+        transform: rotate(360deg);
+        scale: 1;
+    }
+}
+.container::before{
+    z-index: 1;
+    content: '';
+    width: 200vw;
+    height: 200vw;
+    position: absolute;
+    background:radial-gradient(rgb(0, 113, 145),transparent,transparent);
+    animation: animate 15.5s linear infinite;;
+    
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translate(0vw,-50vh);
+    }
+    20%
+    {
+        transform: translate(-30vw,-20vw);
+    }
+    40%
+    {
+        transform: translate(30vw,-20vw);
+    }
+    60%
+    {
+        transform: translate(-30vw,-70vh);
+    }
+    80%
+    {
+        transform: translate(30vw,-70vh);
+    }
+    100%
+    {
+        transform: translate(0vw,-50vh);
+    }
+}
+.gradient{
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 200vh;
+    width: 100%;
+    background-image: linear-gradient( 70deg,rgba(0,0,0,0),60%, rgba(0,0,0,1));
+    z-index: 3;
+}

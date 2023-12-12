@@ -1,0 +1,100 @@
+
+
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(at center, #020E15, #010101);
+    padding: 10vh 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    z-index: 22;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.header{
+    
+    color: var(--textColor);
+    font-size: 4vw;
+    font-family:'Roboto Slab', serif;
+    text-align: center;
+    margin-top: 10vh;
+    max-width: 78vw;
+    line-height: 13vh;
+    z-index: 10;
+    backdrop-filter: blur(1px);
+    text-shadow: #143639 1px 0 10px;
+    margin-bottom: 5vh;
+    opacity: .8;
+}
+.cardContainer{
+    height: auto;
+    width: 100%;
+    padding-left: 3vw;
+}
+.card{
+    height: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-top: 10vh;
+}
+.cardNumber{
+    height: 7vw;
+    width:7vw;
+    background:rgb(9, 42, 61);
+    color: #88cff9;
+    font-weight: bold;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-family: SeymourOne-Regular;
+    opacity: .7;
+
+}
+.cardContent{
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background:rgba(9, 42, 61,.7);
+    border-radius: 2vw;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+
+}
+.cardContent:hover{
+    transition: all .3s ease;
+    background:rgba(16, 71, 104, 0.7);
+}
+.cardHeader{
+    color: #eafeff;
+    font-size: 2.5vw;
+    font-family: 'Roboto Slab', serif;
+    padding-left: 3vw;
+    opacity: .9;
+}
+.cardFullText{
+    color: #eafeff;
+    font-size: 1.5vw;
+    font-family: Montserrat-vs;
+    padding-left: 3vw;
+    margin-top: 2vh;
+    max-width: 90%;
+    opacity: .8;
+}

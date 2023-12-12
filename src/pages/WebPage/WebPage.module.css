@@ -1,0 +1,10 @@
+
+
+
+.container{
+    height: auto;
+    width: 100vw;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}

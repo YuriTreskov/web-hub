@@ -1,0 +1,246 @@
+
+
+
+.container{
+    position: absolute;
+    z-index: 111;
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    overflow: hidden;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+
+.nestedContainer1{
+    height: auto;
+    width: 100%;
+    border-right: 1px solid rgba(178, 228, 251, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wind1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(at center, #062638, rgb(7, 12, 20));
+    box-shadow: 5px 14px 20px #061e2e;
+    -moz-box-shadow: 5px 14px 20px #0c2636;
+    -webkit-box-shadow: 5px 14px 20px #102736;
+    z-index: 10;
+    transition: bacground .3s ease;
+    padding-top: 20vh;
+}
+.wind1:hover{
+    
+    background: radial-gradient(at center, #0a3e5d, rgb(7, 14, 20));
+}
+.timePrice{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hrLeft{
+    width: 10%;
+    height: 1px;
+    border-radius: 10vh;
+    /* opacity: .3; */
+
+    background: rgba(178, 228, 251, 0.3);
+}
+.card{
+    width: 80%;
+    color: #eafeff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 8vw;
+    opacity: .8;
+    text-align: center;
+    margin-bottom: 2vh;  
+    padding: 2vh 1vw;
+    transition: all .4s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover{
+    transform: scale(103%);
+    cursor: pointer;
+    color: #ffeaea;
+}
+.cardActive{
+    width: 80%;
+    color: rgb(247, 148, 156);
+    font-family: 'Roboto Slab', serif;
+    font-size: 3vw;
+    opacity: .8;
+    text-align: center;
+    margin-bottom: 2vh;  
+    padding: 2vh;
+    transition: all .4s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardActive:hover{
+    transform: scale(103%);
+    cursor: pointer;
+    color: #ffeaea;
+}
+.progressBarContainer{
+    width: 90%;
+    height: 3px;
+    border-radius: 10vh;
+    padding: 1px;
+    background: rgba(83, 143, 170, 0.3);
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-bottom: 5vh;
+}
+.progress{
+    height: 2px;
+    width: 5%;
+    border-radius: 10vh;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+/* Правая сторона */
+.nestedContainer2{
+    z-index: 11;
+    background: radial-gradient(at center, #07344f, rgb(9, 21, 33));
+    border-radius: 5vh 5vh 0 0;
+    height: 30vh;
+    width:100%;
+    position: fixed;
+    bottom: -2vh;
+    border-right: 1px solid #b2e4fb1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(177, 248, 255, 0.195);
+}
+.priceContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.timePrice{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:     center;
+}
+.winsPriceHeader{
+    width: 100%;
+    color: #eafeff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 6.5vw;
+    opacity: .8;
+    text-align: center;
+}
+.priceCount{
+    color: #eafeff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 5.3vw;
+    opacity: .7;
+    display: flex;
+    align-items: center;
+}
+.hr{
+    width: 90%;
+    height: 1px;
+    border-radius: 10vh;
+    opacity: .5;
+    margin-top: 6vh;
+    background: rgba(178, 228, 251, 0.3);
+}
+.burtton{
+    color: #eafeff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.9vw;
+    opacity: .8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid rgba(255,255,255,.4);
+    padding: 1.2vh 4vw ;
+    border-radius: 10vh;
+    margin-top: 6vh;
+    transition: all .3s ease;
+}
+.burtton:hover{
+    transform: scale(103%);
+    cursor: pointer;
+}
+.consoleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+
+}
+.buttonContainer{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10vw;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eafeff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 5.3vw;
+    opacity: .7;
+    border-radius: 10vh;
+    border: 1px solid #eafeff;
+    padding: 1vh 10vw;
+}
+.progressBarContainer{
+    width: 90%;
+    height: 3px;
+    border-radius: 10vh;
+    padding: 1px;
+    background: rgba(83, 143, 170, 0.3);
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+
+}
+.progress{
+    height: 1.7px;
+    width: 30%;
+    border-radius: 10vh;
+    background-color: rgb(255, 255, 255);
+}

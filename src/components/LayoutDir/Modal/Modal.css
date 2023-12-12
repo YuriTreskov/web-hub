@@ -1,0 +1,205 @@
+.Page1OnValid{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1111;
+    top:0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+.Page1OnValidImg{
+    height: 20vh;
+    opacity: .8;
+}
+.Button{
+
+    height: 13vh;
+    width: 30vw;
+    position: absolute;
+    background: none;
+    z-index: 22;
+    bottom:9vh;
+    right: 10vw;
+    display: flex;
+    color: white;
+    font-size: 5vh;
+    text-shadow: rgb(20, 20, 20) 1px 0 10px;
+    font-weight: 400;
+    font-family: Montserrat ;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b9d6ff;
+    /* border-radius: 40px; */
+    overflow: hidden;
+    opacity: .7;
+    transition: all 0.3s ease;
+}
+.Button:hover{
+    font-size: 5.1vh;
+    opacity: .9;
+    transform: scale(101%);
+    cursor: pointer;
+    background-color: #1c1c1c;
+    box-shadow: 0 0 2px 2px rgb(98, 200, 255);
+}
+
+.ModalContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 222;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+.ModalWind{
+    height: auto;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(at center, #0b4a6f, rgb(7, 12, 20));
+    border-radius: 5vh;
+    -webkit-box-shadow: 10px 115px 1146px 1187px #0416204a;
+    -moz-box-shadow: 10px 115px 1146px 117px #061c2836;
+    box-shadow: 10px 5px 1146px 1187px #04172143;
+    z-index: 10;
+    padding: 7vh 0;
+}
+.ModalHeader{
+    width: 100%;
+    font-size: 2.1vw;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-weight: 600;
+    color:#eafeff;
+    opacity: .9 ;
+}
+.ModalHeader1{
+    width: 100%;
+    font-size: 1.3vw;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin-top: 20px;
+    color:#eafeff;
+    opacity: .8;
+}
+.ModalForm{
+    height: 70%;
+    width: 100%;
+    text-align: center;
+}
+.ModalFormError{
+    color: red;
+    font-size: 3vh;
+    margin-top: 1vh;
+}
+.ModalInputName{
+    width: 80%;
+    height: 50px;
+    margin-top: 4vh;
+    border-radius: 5vh;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    background:transparent;
+    color:#eafeff;
+    font-size: 1.8vw;
+    font-family: 'Roboto Slab', serif;
+}
+.ModalInputName::placeholder{
+    color: #eafeffd4;
+}
+.ModalInputPhone{
+    width: 80%;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 5vh;
+    border: 1px solid #dddddd;
+    text-align: center;
+    background: transparent;
+    color: #eafeffd4;
+    font-size: 1.8vw;
+    font-family: 'Roboto Slab', serif;
+}
+.ModalInputPhone::placeholder{
+    color: #eafeffd4;
+}
+::-webkit-input-placeholder {color:#1d0e0c;}
+::-moz-placeholder          {color:#1d0e0c;}/* Firefox 19+ */
+:-moz-placeholder           {color:#1d0e0c;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#1d0e0c;}
+::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+.ModalFormButton{
+    height: 50px;
+    width: 82%;
+    background: linear-gradient(rgba(146, 219, 250, 0.407), rgba(1, 33, 74, 0.385));
+    opacity: .9;
+    border-radius: 20px;
+    border: none;
+    color: rgba(255, 255, 255, 0.564);
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+.ModalFormButton:hover{
+    background: linear-gradient(rgba(146, 219, 250, rgba(22, 65, 121, 0.549)65, 121));
+    opacity: 1;
+    transform: scale(101%);
+    cursor: pointer;
+    color:#eafeff ;
+}
+
+@media (max-width: 768px){
+    .Button{
+        height: 9vh;
+        width: 70%;
+        bottom:7%;
+        left: 15%;
+        font-size: 3vh;
+    }
+    .Button:hover{
+        font-size: 3.05vh;
+    }
+    .ModalWind{
+        height: auto;
+        width: 90vw;
+    }
+    .ModalHeader{
+        font-size: 7vw;
+        margin-top: 0vh;
+    }
+    .ModalHeader1{
+        font-size: 3vw;
+        margin-top: 2vh;
+    }
+    .ModalInputName{
+        height: 5vh;
+        width: 90%;
+        margin-top: 4vh;
+        font-size: 12px;
+    }
+    .ModalInputPhone{
+        height: 5vh;
+        width: 90%;
+        margin-top: 3vh;
+        font-size: 12px;
+    }
+    .ModalFormButton{
+        height: 5vh;
+        width: 90%;
+        margin-top: 3vh;
+        font-size: 12px;
+
+    }
+}

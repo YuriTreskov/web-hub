@@ -1,0 +1,200 @@
+@font-face {
+	font-family: 'SeymourOne-Regular-vseSayty'; 
+	src: url(/src/fonts/CormorantInfant-Regular.ttf); 
+}
+@font-face {
+	font-family: 'Agbalumo-Regular'; 
+	src: url(/src/fonts/Comfortaa-VariableFont_wght.ttf); 
+}
+
+
+.container{
+    height: auto;
+    width: 100%;
+    background: radial-gradient(at center, #020E15, #010101);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10vh;
+}
+.header{
+    color: #eafeff;
+    font-family:SeymourOne-Regular-vseSayty;
+    font-size: 5vw;
+    margin-top: 10vh;
+    text-align: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.cardContainer{
+    height: auto;
+    width: 100%;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0 3vw;
+}
+.card{
+    height: auto;
+    width: 33%;
+    margin: 0 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 22;
+    overflow: hidden;
+    position: relative;
+}
+.card:hover::before{
+    content: '';
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    background:radial-gradient(rgb(0, 74, 94),transparent,transparent);
+    animation: animate 5.5s linear infinite;;
+    z-index: 0;
+    
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translate(0vw,0vh);
+    }
+    25%
+    {
+        transform: translate(7vw,-7vw);
+    }
+    50%
+    {
+        transform: translate(-7vw,-7vw);
+    }
+    75%
+    {
+        transform: translate(-7vw,0vw);
+    }
+    100%
+    {
+        transform: translate(0vw,0vw);
+    }
+}
+.cardHeader{
+    color: #eafeff;
+    font-family:Agbalumo-Regular;
+    font-size: 1.8vw;
+    margin-top: 5vh;
+    height: 8vh;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.imgLink{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.img{
+    width: 95%;
+    height: 95%;
+    border-radius: 3vh;
+    margin-top: 3vh;
+    opacity: .8;
+    transition:  1s ease;
+}
+.img:hover{
+    
+    opacity: 1;
+    transform: scale(101%);
+}
+.button{
+    text-decoration: none;
+    color: #849394;
+    font-family:Agbalumo-Regular;
+    font-size: 2vw;
+    margin-top: 7vh;
+    height: 8vh;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9dbec0;
+    border-radius: 4vw;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    z-index: 22;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.button:hover{
+    transition: all .4s ease;
+    transform: scale(103%);
+    color: rgb(176, 233, 233);
+}
+
+
+@media (max-width: 768px){
+    .header{
+        font-size: 10vw;
+        margin-top: 7vh;
+        height: 7vh;
+    }
+    .cardContainer{
+        margin-top: 8vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 80%;
+        margin: 0 ;
+        padding: 1vh 0;
+    }
+    .imgLink{
+
+    }
+    .cardHeader{
+        color: #eafeff;
+        font-family:Agbalumo-Regular;
+        font-size: 5vw;
+        margin-top: 0vh;
+        height: 4vh;
+    }
+    .webHeader{
+
+    }
+    .mobileHeader{
+        margin-top: 10vh;
+    }
+    .crmHeader{
+        margin-top: 10vh;
+    }
+    .img{
+        box-shadow: none;
+    }
+    .button{
+        font-size: 5vw;
+        margin-top: 5vh;
+        height: 6vh;
+        width: 90%;
+        border-radius: 9vw;
+        margin-bottom: 0vh; 
+    }
+    .card:hover::before{
+        display: none;      
+    }
+}

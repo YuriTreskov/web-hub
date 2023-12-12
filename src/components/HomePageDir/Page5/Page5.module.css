@@ -1,0 +1,143 @@
+@font-face {
+	font-family: 'SeymourOne-Regular-vseSayty'; 
+	src: url(/src/fonts/CormorantInfant-Regular.ttf); 
+}
+@font-face {
+	font-family: 'SeymourOne-Regular'; 
+	src: url(/src/fonts/SeymourOne-Regular.ttf); 
+}
+@font-face {
+	font-family: 'Montserrat-vs'; 
+	src: url(/src/fonts/Montserrat-Italic-VariableFont_wght.ttf); 
+}
+
+.container{
+    height: auto;
+    width: 100%;
+    background: radial-gradient(at center, #020E15, #010101);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0;
+}
+.header{
+    color: #eafeff;
+    font-size: 4.5vw;
+    font-family: SeymourOne-Regular-vseSayty;
+}
+.cardContainer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+.card{
+    height: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-top: 10vh;
+}
+.cardNumber{
+    height: 7vw;
+    width:7vw;
+    background:rgb(9, 42, 61);
+    color: #88cff9;
+    font-weight: bold;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-family: SeymourOne-Regular;
+    opacity: .7;
+
+}
+.cardContent{
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background:rgba(9, 42, 61,.7);
+    border-radius: 2vw;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.cardContent:hover{
+    transition: all .3s ease;
+    background:rgba(16, 71, 104, 0.7);
+}
+.cardHeader{
+    color: #eafeff;
+    font-size: 2.5vw;
+    font-family: SeymourOne-Regular-vseSayty;
+    padding-left: 3vw;
+}
+.cardFullText{
+    color: #eafeff;
+    font-size: 1.5vw;
+    font-family: Montserrat-vs;
+    padding-left: 3vw;
+    margin-top: 2vh;
+    max-width: 90%;
+    opacity: .8;
+}
+
+
+
+
+@media (max-width: 768px){
+    .header{
+        font-size: 7.5vw;
+    }
+    .card{
+        width: 90%;
+        margin-top: 8vh;
+        flex-direction: column;
+        gap: 3vh;
+    }
+    .cardNumber{
+        height: 12vw;
+        width:12vw;
+        font-size: 5vw;
+    }
+    .cardHeader{
+        font-size: 5.5vw;
+        padding-left: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+        
+    }
+    .cardFullText{
+        color: #eafeff;
+        font-size: 3.5vw;
+        font-family: Montserrat-vs;
+        padding-left: 5vw;
+        margin-top: 4vh;
+        max-width: 90%;
+        opacity: .8;
+        text-align: center;
+    }
+    .cardContent{
+        align-items: center;
+        justify-content: center;
+    }
+}

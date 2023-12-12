@@ -1,0 +1,140 @@
+@font-face {
+	font-family: 'SeymourOne-Regular-vseSayty'; 
+	src: url(/src/fonts/CormorantInfant-Regular.ttf); 
+}
+@font-face {
+	font-family: 'Agbalumo-Regular'; 
+	src: url(/src/fonts/Comfortaa-VariableFont_wght.ttf); 
+}
+
+
+.container{
+    height: auto;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: radial-gradient(at center, #020E15, #010101);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10vh 0 10vh 0;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.header{
+    color: #eafeff;
+    font-size: 8vw;
+    font-family: 'Roboto Slab', serif;
+    opacity: .8;
+}
+.header1{
+    margin-top: 3vh;
+    color: #eafeff;
+    font-size: 6vw;
+    font-family: 'Roboto Slab', serif;
+    opacity: .8;
+}
+.contentContainer{
+    width: 70vh;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fon{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: .2;
+}
+.buttonContainer{
+    height:50vh ;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+
+}
+.cardHeader{
+    color: #eafeff;
+    font-size: 8vw;
+    max-width: 90%;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 5vh;
+    opacity: .8;
+}
+.watsapp{
+    height: 7vh;
+    width: 70%;
+    cursor:pointer;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 10vw;
+    font-size: 5vw;
+    font-weight: 600;
+    font-family: Agbalumo-Regular;
+    opacity: .8;
+}
+.telegram{
+    height: 7vh;
+    width: 70%;
+    cursor:pointer;
+    background: #1BB0DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 10vw;
+    font-size: 5vw;
+    font-weight: 600;
+    font-family: Agbalumo-Regular;
+    opacity: .8;
+}
+.telegram:hover{
+    transform: scale(103%);
+    opacity: 1;
+    transition: all .3s ease;
+    color:#eafeff ;
+}
+.watsapp:hover{
+    transform: scale(103%);
+    opacity: 1;
+    transition: all .3s ease;
+    color:#eafeff ;
+}
+.number:hover{
+    transform: scale(103%);
+    opacity: 1;
+    transition: all .3s ease;
+    color:#eafeff ;
+}
+.number{
+    height: 8vh;
+    width: 70%;
+    cursor:pointer;
+    background: transparent;
+    border: 1px solid #658183 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 10vw;
+    font-size: 5vw;
+    font-weight: 600;
+    font-family: Agbalumo-Regular;
+    opacity: .8;
+}

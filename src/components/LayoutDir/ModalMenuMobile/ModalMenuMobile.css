@@ -1,0 +1,66 @@
+@font-face {
+	font-family: 'SeymourOne-Regular-vseSayty'; 
+	src: url(/src/fonts/CormorantInfant-Regular.ttf); 
+}
+
+.container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,0.8);
+    z-index: 113;
+    padding-top: 4vh;
+}
+.navbarContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0vw;
+    flex-grow: 1;
+    padding: 5vh 0;
+}
+.navbarMobileLink{
+    color: rgb(211, 239, 245);
+    font-size: 12.5vw;
+    font-family: 'Roboto Slab', serif;
+    opacity: .9;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 2vh;
+    border-radius: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.activeMobileLink{
+    color: rgb(0, 166, 191);
+    font-size: 12.5vw;
+    font-family: 'Roboto Slab', serif;
+    opacity: .7;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 3vh;
+    border-radius: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.navbarMobileLink:hover{
+    color:rgb(144, 225, 250);
+
+    opacity: 1;
+    cursor: pointer;
+    border: 1px solid gray;
+    backdrop-filter: blur(25px);
+    transition: .1s all ease;
+}
+.calc{
+    height: 4vh;
+}

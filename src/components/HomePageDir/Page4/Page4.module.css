@@ -1,0 +1,102 @@
+@font-face {
+	font-family: 'Comfortaa-VariableFont_wght'; 
+	src: url(/src/fonts/Comfortaa-VariableFont_wght.ttf); 
+}
+@font-face {
+	font-family: 'SeymourOne-Regular-vseSayty'; 
+	src: url(/src/fonts/CormorantInfant-Regular.ttf); 
+}
+
+.container{
+    height: auto;
+    width: 100%;
+    background: radial-gradient(at center, #020E15, #010101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding: 10vh 0;
+}
+.card{
+    height: auto;
+    width: 25%;
+    border: 1px solid #92adae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0;
+    background:radial-gradient(rgb(0, 30, 38),transparent,transparent);
+}
+.card:hover{
+    transition: .2s all ease;
+    border: 1px solid #7df3f7;
+}
+.cardImg{
+    height: 20vh;
+    opacity: .8;
+    transition: all .4s ease
+}
+.cardImg:hover{
+    transform: scale(103%);
+    opacity: 1;
+}
+.cardHeader{
+    color: #eafeff;
+    font-size: 2.5vw;
+    font-family: SeymourOne-Regular-vseSayty;
+    margin-top: 5vh;
+    text-decoration: none;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.cardHeader:hover{
+    transition: all .3s ease;
+    cursor: pointer;
+    transform: scale(105%);
+}
+.cardFullText{
+    color: #eafeff;
+    font-size: 1.3vw;
+    text-align: center;
+    margin-top: 5vh;
+    opacity: .8;
+    padding: 0 2vw;
+    font-family: Comfortaa-VariableFont_wght;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+        gap: 5vw;
+        padding: 10vh 0;
+        
+    }
+    .card{
+        width: 80%;
+        padding: 10vh 0;
+        margin-top: 10vh;
+    }
+    .cardHeader{
+        font-size: 6.5vw;
+        margin-top: 5vh;
+    }
+    .cardFullText{
+        font-size: 3.3vw;
+        margin-top: 5vh;
+        padding: 0 5vw;
+        line-height: 4vh;
+    }
+}

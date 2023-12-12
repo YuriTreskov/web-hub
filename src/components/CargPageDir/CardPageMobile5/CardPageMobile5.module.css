@@ -1,0 +1,101 @@
+@font-face {
+	font-family: 'SeymourOne-Regular-vseSayty'; 
+	src: url(/src/fonts/CormorantInfant-Regular.ttf); 
+}
+@font-face {
+	font-family: 'SeymourOne-Regular'; 
+	src: url(/src/fonts/SeymourOne-Regular.ttf); 
+}
+@font-face {
+	font-family: 'Montserrat-vs'; 
+	src: url(/src/fonts/Montserrat-Italic-VariableFont_wght.ttf); 
+}
+
+.container{
+    height: auto;
+    width: 100%;
+    background: radial-gradient(at center, #020E15, #010101);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0;
+}
+.header{
+    color: #eafeff;
+    font-size: 8vw;
+    font-family: 'Roboto Slab', serif;
+    opacity: .8;
+    text-align: center;
+}
+.cardContainer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+.card{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-top: 10vh;
+}
+.cardNumber{
+    height: 19vw;
+    width:19vw;
+    background:rgb(9, 42, 61);
+    color: #88cff9;
+    font-weight: bold;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-family: SeymourOne-Regular;
+    opacity: .7;
+
+}
+.cardContent{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:rgba(9, 42, 61,.7);
+    border-radius: 5vw;
+    padding: 5vh 1vh;
+
+}
+.cardContent:hover{
+    transition: all .3s ease;
+    background:rgba(16, 71, 104, 0.7);
+}
+.cardHeader{
+    color: #eafeff;
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    padding-left: 3vw;
+    opacity: .9;
+}
+.cardFullText{
+    color: #eafeff;
+    font-size: 4vw;
+    text-align: center;
+    font-family: Montserrat-vs;
+    padding-left: 3vw;
+    margin-top: 2vh;
+    max-width: 90%;
+    opacity: .8;
+}
+
+
+

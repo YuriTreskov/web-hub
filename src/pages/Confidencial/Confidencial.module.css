@@ -1,0 +1,106 @@
+.container{
+    height: auto;
+    width: 100%;
+    background: radial-gradient(at center, #020E15, #010101);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0;
+    gap: 5vh ;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.header{
+    
+    color: var(--textColor);
+    font-size: 3vw;
+    font-family:'Roboto Slab', serif;
+    text-align: center;
+    margin-top: 5vh;
+    max-width: 78vw;
+    z-index: 10;
+    backdrop-filter: blur(1px);
+    text-shadow: #143639 1px 0 10px;
+    opacity: .8;
+}
+.header1{
+    
+    color: var(--textColor);
+    font-size: 3vw;
+    font-family:'Roboto Slab', serif;
+    text-align: center;
+    margin-top: 10vh;
+    max-width: 78vw;
+    z-index: 10;
+    backdrop-filter: blur(1px);
+    text-shadow: #143639 1px 0 10px;
+    opacity: .8;
+    margin-bottom: 5vh;
+}
+.description{
+    
+    color: var(--textColor);
+    font-size: 2vw;
+    font-family:'Roboto Slab', serif;
+    text-align: center;
+    max-width: 78vw;
+    z-index: 10;
+    backdrop-filter: blur(1px);
+    text-shadow: #143639 1px 0 10px;
+
+    opacity: .8;
+}
+
+@media (max-width: 768px){
+    .container{
+        padding: 10vh 0;
+        gap: 1vh ;
+
+    }
+    .header{
+    
+        color: var(--textColor);
+        font-size: 7vw;
+        font-family:'Roboto Slab', serif;
+        text-align: center;
+        margin-top: 1vh;
+        max-width: 90vw;
+
+        z-index: 10;
+        backdrop-filter: blur(1px);
+        text-shadow: #143639 1px 0 10px;
+        opacity: .8;
+    }
+    .header1{
+        
+        color: var(--textColor);
+        font-size: 6vw;
+        font-family:'Roboto Slab', serif;
+        text-align: center;
+        margin-top: 10vh;
+        max-width: 90vw;
+        z-index: 10;
+        backdrop-filter: blur(1px);
+        text-shadow: #143639 1px 0 10px;
+        opacity: .8;
+    }
+    .description{
+        
+        color: var(--textColor);
+        font-size: 4vw;
+        font-family:'Roboto Slab', serif;
+        text-align: center;
+        max-width: 90vw;
+        z-index: 10;
+        backdrop-filter: blur(1px);
+        text-shadow: #143639 1px 0 10px;
+    
+        opacity: .8;
+    }
+}

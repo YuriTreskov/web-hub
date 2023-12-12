@@ -1,0 +1,349 @@
+
+
+
+.container{
+    z-index: 2;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    background: transparent;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+
+.nestedContainer1{
+    height: auto;
+    width: 100%;
+    border-right: 1px solid rgba(178, 228, 251, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 10vh;
+}
+
+.wind1{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(at center, #062638, rgb(7, 12, 20));
+    box-shadow: 5px 14px 20px #061e2e;
+    -moz-box-shadow: 5px 14px 20px #0c2636;
+    -webkit-box-shadow: 5px 14px 20px #102736;
+    z-index: 10;
+    padding-bottom: 32vh;
+}
+.windHeader{
+    color: #eafeff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 7.5vw;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    opacity: .8;
+}
+.windHeader1{
+    color: #eafeff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 5vw;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    opacity: .8;
+}
+.tzContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:5vh;
+    margin-top: 5vh;
+}
+.tz{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 3vh 10vw;
+    border:1px solid rgba(197, 240, 252, 0.633);
+    border-radius: 5vh;
+    backdrop-filter: blur(10px);
+}
+.cardImgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+.tzImg{
+    height: 4vh;
+    transition: all .3s ease;
+    
+}
+.tzText{
+    color: #eafeff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 4.5vw;
+    opacity: .8;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    height: 10vh;
+}
+.cardPrice{ 
+    color: rgb(14, 228, 239);
+    font-family: 'Roboto Slab', serif;
+    font-size: 4vw;
+    opacity: .8;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+} 
+.tzTextCount{
+    padding-left: .7vw;
+}
+.hrLeft{
+    width: 90%;
+    height: 1px;
+    border-radius: 10vh;
+    /* opacity: .3; */
+    margin-top: 3vh; 
+    margin-left: 5%; 
+    background: rgba(178, 228, 251, 0.3);
+}
+.count{
+    margin-top: 1vh;
+    padding: 0 1.8vw;
+    display: flex;
+    align-items: center;
+}
+.countPageContainer{
+    height: 6vh;
+    width: 15vw;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1px;
+    overflow: hidden;
+    opacity: .8;
+}
+.countPage{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.contPageCount{
+    height: 50%;
+    width: 100%;
+    background-color: #6f8bb0;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    border-left: 1px solid rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1vh;
+    
+}
+.contPageCount:hover{
+    background-color:#265086 ;
+}
+.backCount{
+    height: 2.5vh;
+    opacity: .7;
+}
+.nextCount{
+    height: 2.5vh;
+    opacity: .7;
+    transition: all .4s ease;
+}
+.nextCount:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    opacity: 1;
+}
+.backCount:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    opacity: 1;
+}
+.back{
+    position: absolute;
+    left: 5vw;
+    top: 45%;
+    height: 10vh;
+    opacity: .7;
+    transform: rotate(5deg);
+    z-index: 10;
+  }
+  .back:hover{
+    transform: scale(110%);
+    transition: all .3s ease;
+    cursor: pointer;
+    opacity: 1;
+  }
+  .next{
+    position: absolute;
+    right: 5vw;
+    top: 45%;
+    height: 10vh;
+    opacity: .7;
+    transform: rotate(-5deg);
+    z-index: 10;
+  }
+  .next:hover{
+    
+    transform: scale(110%);
+    transition: all .3s ease;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+
+
+/* Правая сторона */
+.nestedContainer2{
+    background: radial-gradient(at center, #0a3e5d, rgb(7, 14, 20));
+    border-radius: 5vh 5vh 0 0;
+    height: 30vh;
+    width:100%;
+    position: fixed;
+    bottom: -2vh;
+    border-right: 1px solid rgba(178, 228, 251, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(177, 249, 255, 0.336);
+}
+.priceContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.timePrice{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:     center;
+}
+.winsPriceHeader{
+    width: 100%;
+    color: #eafeff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 6.5vw;
+    opacity: .8;
+    text-align: center;
+}
+.priceCount{
+    color: #eafeff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 5.3vw;
+    opacity: .7;
+    display: flex;
+    align-items: center;
+}
+.hr{
+    width: 1%;
+    height: 50%;
+    border-radius: 10vh;
+    opacity: .5;
+    margin-top: 6vh;
+    background: rgba(178, 228, 251, 0.3);
+}
+.burtton{
+    color: #eafeff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.9vw;
+    opacity: .8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid rgba(255,255,255,.4);
+    padding: 1.2vh 4vw ;
+    border-radius: 10vh;
+    margin-top: 6vh;
+    transition: all .3s ease;
+}
+.burtton:hover{
+    transform: scale(103%);
+    cursor: pointer;
+}
+.consoleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
+
+}
+.buttonContainer{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:35vw;
+    height: 13vh;
+    overflow: hidden;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eafeff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 5.3vw;
+    opacity: .7;
+    /* border-radius: 10vh;
+    border: 1px solid #eafeff; */
+    /* padding: 1vh 10vw; */
+}
+.progressBarContainer{
+    width: 90%;
+    height: 3px;
+    border-radius: 10vh;
+    padding: 1px;
+    background: rgba(83, 143, 170, 0.3);
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+
+}
+.progress{
+    height: 1.7px;
+    width: 30%;
+    border-radius: 10vh;
+    background-color: rgb(255, 255, 255);
+}
+.mobileNextImg{
+    height: 5vh;
+}

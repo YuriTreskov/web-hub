@@ -1,0 +1,141 @@
+@font-face {
+	font-family: 'Agbalumo-Regular'; 
+	src: url(/src/fonts/RobotoSlab-VariableFont_wght.ttf); 
+}
+@font-face {
+	font-family: 'Montserrat-vs'; 
+	src: url(/src/fonts/Montserrat-Italic-VariableFont_wght.ttf); 
+}
+
+
+.container{
+    height: 20vh;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 900;
+}
+.logoContainer{
+    height: 90%;
+    width: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vw;
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    height: 12vh;
+    opacity: .7;
+    transition: .5s all ease;
+}
+.logo:hover{
+    transform: scale(105%);
+    cursor: pointer;
+    opacity: 1;
+}
+.logoContur{
+    position: fixed;
+    height: 14vh;
+}
+.navbarContainer{
+    height: 100%;
+    width: 87vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    flex-grow: 1;
+}
+.navbarLink{
+    color: white;
+    font-size: 1.5vw;
+    font-family: Montserrat-vs;
+    opacity: .7;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 2vh;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.navbarLink .active{
+    color: red;
+}
+.navbarLink:hover{
+    
+    opacity: 1;
+    cursor: pointer;
+    border: 1px solid gray;
+    backdrop-filter: blur(25px);
+    transition: .1s all ease;
+}
+.buttonContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-grow: 1;
+}
+.button{
+    height:30%;
+    width: 15vw;
+    background: transparent;
+    border-radius: 4vh;
+    border: 1px solid gray;
+    margin-right: 1vw;
+    color: rgb(186, 186, 186);
+    font-size: 1.4vw;
+    transition: .4s all ease;
+    
+}
+.button:hover{
+    color: white;
+    cursor: pointer;
+    transform: scale(103%);
+}
+.login{
+    color: white;
+    font-size: 10vh;
+    margin-right: 1.5vw;
+    transition: .3s all ease;
+    cursor: pointer;
+    opacity: .7;
+    margin-top: -6vh;
+}
+.login:hover{
+    transform: scale(105%);
+    opacity: 1;
+}
+.calc{
+    height: 4vh;
+}
+
+
+@media (max-width: 768px){
+    .container{
+        height: 15vh;
+    }
+    .logoContainer{
+        height: 50%;
+        width: 25vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1vw;
+    }
+    .logo{
+        height: 10vh;
+        opacity: .7;
+        transition: .5s all ease;
+    }
+    .logoContur{
+        position: fixed;
+        height: 11vh;
+    }
+}
